@@ -3,8 +3,8 @@
 class Battler;
 struct SDL_Renderer;
 
-class BattleInfoPanel {
+class BattlerPanel {
 public:
-    void update(Battler *player, Battler *enemy);
+    void update(Battler *battler);
     void render(SDL_Renderer *renderer);
 };
