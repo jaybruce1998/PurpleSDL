@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(PokemonPurple LANGUAGES CXX)
+project(Purple LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,7 +15,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )
 
-add_executable(PokemonPurple
+add_executable(Purple
     src/main.cpp
     src/OverworldGui.cpp
     src/BattleInfoPanel.cpp
@@ -49,8 +49,9 @@ add_executable(PokemonPurple
     src/TextRenderer.cpp
 )
 
-target_link_libraries(PokemonPurple
+target_link_libraries(Purple
     ${SDL2_LIBRARIES}
     SDL2_image::SDL2_image
     SDL2_ttf::SDL2_ttf
 )
+
